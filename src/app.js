@@ -21,9 +21,9 @@ app.get('/', (req,res) => {
 });
 
 app.get('/jobs/:id', (req,res) => {
-    const id = req.param.id;
+    const id = req.params.id;
     const matchedJob = JOBS.find(job => job.id.toString() === id);
-    res.render('jobs', {job:matchedJob});
+    res.render('job', {job:matchedJob});
     })
     
 
