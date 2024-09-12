@@ -68,7 +68,8 @@
         <h2 class="text-center">Contact Us</h2>
         <h3 class="text-center">{{job.title}}</h3>
         <div class="text-center">Location: {{job.location}}</div>
-        <form action="/jobs/{{job.id}}/Contact Us" method="POST">
+        <img src="{{job.image}}" alt="{{job.title}}">
+        <form action="/jobs/{{job.id}}/apply" method="POST">
             <div class="form-group col-12 col-md-6 offset-md-3 mt-3">
                 <label for="name">Name:</label>
                 <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
