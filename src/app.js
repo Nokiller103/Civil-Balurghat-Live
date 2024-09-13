@@ -12,8 +12,6 @@ app.set('view engine', 'mustache');
 app.engine('mustache', mustacheExpress());
 
 
-app.use(express.static(path.join(__dirname, 'images')));
-
 app.get('/', (req,res) => {
     //res.send('hello world!');
     //res.sendFile(path.join(__dirname, 'pages/index.html'));
