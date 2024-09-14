@@ -23,6 +23,11 @@ app.get('/jobs/:id', (req,res) => {
     const matchedJob = JOBS.find(job => job.id.toString() === id);
     res.render('jobs', {job:matchedJob});
     })
+
+    app.get('/contact', (req, res) => {
+        res.render('contact');
+      });
+      
     
 
 const port = process.env.PORT || 3000;
