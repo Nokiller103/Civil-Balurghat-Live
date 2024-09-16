@@ -77,7 +77,23 @@
   <section id="service" class="service-section">
     <div class="container mt-5">
       <h1 class="pb-2 text-center border-bottom">Services</h1>
-      <div class="album py-5 bg-body-tertiary">
+      <div class="py-5 bg-body-tertiary d-md-none">
+        <div class="container">
+          <div class="col-12 my-3">
+            {{#jobs}}
+              <div class="card-1 border">
+                <img src="{{image}}" class="card-img-top" alt="{{title}}">
+                <div class="card-body-1">
+                  <h5>{{title}}</h5>
+                  <p>{{location}}</p>
+                  <a href="/jobs/{{id}}" class="btn btn-primary">Contact Us</a>
+                </div>
+              </div>
+            {{/jobs}}
+          </div>
+        </div>
+      </div>
+      <div class="album py-5 bg-body-tertiary d-none d-md-block">
         <div class="container">
 
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
